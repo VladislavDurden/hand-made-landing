@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/wi-feedback.min.css">
+    <link rel="stylesheet" href="css/jgallery.min.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-locale_ru-by.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.wi-feedback.min.js"></script>
+    <script src="js/jgallery.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=jQuery.fn.lpMapInit" type="text/javascript" async></script>
+</head>
+
+<body>
+
+    <div id="page-preloader" class="preloader">
+        <div class="loader">
+
+        </div>
+    </div>
+
+    <header>
+
+        <div class="container">
+            <ul>
+                <li><a href="#slideshow">Главная</a></li>
+                <li><a href="#services">Инфо</a></li>
+                <li><a href="#portfolio">Галерея</a></li>
+                <li><a href="#prices">Цены</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <div class="grad1">
+
+        <section id='slideshow'>
+
+            <div class="container wow bounceInDown">
+                <div class="lp-content slideshow">
+                    <div class="owl-carousel lp-slider1">
+                        <div class="swiper-slide"><img src="img/slideshow/slide1.jpg" alt="1"></div>
+                        <div class="swiper-slide"><img src="img/slideshow/slide2.jpg" alt="2"></div>
+                        <div class="swiper-slide"><img src="img/slideshow/slide3.jpg" alt="3"></div>
+                        <div class="swiper-slide"><img src="img/slideshow/slide4.jpg" alt="4"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <div class="grad2">
+        <section id='services' class="wow bounceInLeft">
+
+            <div class="container rounded">
+                <div class="lp-content services">
+
+
+                    <div class="lp-tabs">
+
+                        <div data-tab-title='Как заказать'>
+                            <h2 class="white">Как заказать</h2>
+                            <div class="tabs-text">
+                                <strong><p>Чтобы заказать изделие, просто напишите мне о вашем желании или свяжитесь со мной удобным для вас способом!</p>
+                                <p>Контактная информация указана на данном сайте.</p>
+                                <p>Заказы выполняются по записи в порядке очереди, но есть исключительные случаи, когда возможен срочный заказ вне очереди.Все эти детали обсуждаются в личной беседе с клиентом.</p>
+                                <p> В галерее работ представлены изделия, которые я могу повторить на заказ.</p>
+                                <p>Но всегда возможны какие-то дополнительные пожелания, вариации по образцам готовых изделий или мы можем совместно попытаться воплотить вашу фантазию. Пишите, не стесняйтесь - все обсудим!</p>
+                                <p>Приведенные цены действительны для копии изделия на заказ, во всех остальных случаях цена обсуждается отдельно.</p>
+                                <p>Буду рада создать для вас что-то красивое и уникальное!</p>
+                                </strong>
+                            </div>
+                        </div>
+                        <div data-tab-title='Оплата и доставка'>
+                            <h2 class="white">Оплата и доставка</h2>
+                            <div class="tabs-text">
+                               <strong>
+                                <p>Возможны несколько вариантов оплаты заказа:</p>
+                                <p>1. Наличными, при личной встрече с мастером.</p>
+                                <p>Данный вариант доступен жителям г. Могилева.</p>
+                                <p>Также оплатить заказ при личной встрече смогут и жители г. Минска, но такая возможность может быть доступна один или два раза в месяц и это следует обсудить при заказе.</p>
+                                <p>2. Оплата наложенным платежом, при получении посылки на почте.</p>
+                                <p>3. Оплата на карту Беларусбанка</p>
+                                <p>4. Оплата на карту БПС банка Доставка:</p>
+                                <p>Доставка:</p>
+                                <p>- самовывоз для жителей г. Могилева (бесплатно);</p>
+                                <p>- самовывоз для жителей г. Минска (бесплатно, данный вариант доступен 1-2 раза в месяц);</p>
+                                <p>- для жителей других населенных пунктов - почтовым отправлением посредством РУП Белпочта (по тарифам почтовой службы).</p>
+                                </strong>
+                            </div>
+                        </div>
+                        <div data-tab-title='Уход за изделиями'>
+                            <h2 class="white">Уход за изделиями</h2>
+                            <div class="tabs-text">
+                               <strong>
+                                <p>Рекомендации по уходу за изделиями с декором из полимерной глины (кружки, ложки, вилки, бокалы)</p>
+                                <p>1. Не использовать для мытья изделий посудомоечную машину! Не замачивать. Мыть руками в теплой воде, можно с моющим средством.</p>
+                                <p>2. Не нагревать в микроволновке. </p>
+                                <p>3. Пользоваться аккуратно, держась не за украшение, а за саму ложку (вилку).</p>
+                                <p>4. Избегать ударов, иначе могут отпасть мелкие части или само украшение.</p>
+                                <p>5. Ложку в горячем напитке лучше не оставлять надолго. Металл расширяясь и потом сужаясь, может отделиться от украшения.</p>
+                                <p>6. Если вдруг украшение отделилось от предмета, можно приклеить его на эпоксидный клей или клей Супер Момент для соответствующего материала (керамика, стекло, металл).</p>
+                                <p>7. Кружку с декором из полимерной глины можно спокойно использовать как для горячих, так и для холодных напитков. Полимерная глина довольно прочный материал и выдерживает температуру до 120 градусов. Но избегайте резких перепадов температур, от этого может пострадать не только декор, но и сама чашка.</p>
+                                </strong>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <div class="grad3">
+        <section id='portfolio' class="wow bounceInRight">
+
+            <div class="container ">
+                <div class="lp-content portfolio">
+
+                    <h2 class="white">Галерея</h2>
+
+                    <div id="gallery">
+                        <div class="album" data-jgallery-album-title="Бижутерия"></div>
+                        <div class="album" data-jgallery-album-title="Декор посуды"></div>
+                        <div class="album" data-jgallery-album-title="Шкатулки и сувениры"></div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <div class="grad4">
+        <section id='prices' class="wow bounceInLeft" ng-app="lpApp">
+
+            <div class="container ">
+                <div class="lp-content prices" ng-controller="lpPriceCtrl">
+
+                    <h2 class="black">Цены</h2>
+
+                    <table ng-show="prices" class="table table-bordered table-striped table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th><span> number</span></th>
+                                <th ng-click="sortSet('name')">
+                                    <span>name</span>
+                                    <i class="fas fa-sort" ng-show="sortBy != 'name'"></i>
+                                    <i class="fas fa-sort-up" ng-show="sortBy == 'name' && !sortRev"></i>
+                                    <i class="fas fa-sort-down" ng-show="sortBy == 'name' && sortRev"></i>
+                                </th>
+                                <th ng-click="sortSet('price')">
+                                    <span>price</span>
+                                    <i class="fas fa-sort" ng-show="sortBy != 'price'"></i>
+                                    <i class="fas fa-sort-up" ng-show="sortBy == 'price' && !sortRev"></i>
+                                    <i class="fas fa-sort-down" ng-show="sortBy == 'price' && sortRev"></i>
+                                </th>
+                                <th ng-click="sortSet('discount')">
+                                    <span>discount</span>
+                                    <i class="fas fa-sort" ng-show="sortBy != 'discount'"></i>
+                                    <i class="fas fa-sort-up" ng-show="sortBy == 'discount' && !sortRev"></i>
+                                    <i class="fas fa-sort-down" ng-show="sortBy == 'discount' && sortRev"></i>
+                                </th>
+                                <th ng-click="sortSet('price2')">
+                                    <span>price with discount</span>
+                                    <i class="fas fa-sort" ng-show="sortBy != 'price2'"></i>
+                                    <i class="fas fa-sort-up" ng-show="sortBy == 'price2' && !sortRev"></i>
+                                    <i class="fas fa-sort-down" ng-show="sortBy == 'price2' && sortRev"></i>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="price in prices | orderBy:sortBy:sortRev">
+                                <td>
+                                    {{$index + 1}}
+                                </td>
+
+                                <td>
+                                    <span>{{price.name}}</span>
+                                    <i ng-show="price.discount" class="fa fa-tags"></i>
+                                </td>
+
+                                <td>
+                                    {{price.price | currency}}
+                                </td>
+
+                                <td>
+                                    <span ng-show="price.discount">{{price.discount * 100}}%</span>
+                                    <span ng-hide="price.discount">-</span>
+                                </td>
+                                <td>{{price.price2 | currency }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div ng-hide="prices" class="alert alert-danger">
+                        DOWNLOAD ERROR !!! {{requestStatus}} {{requestStatusText}}
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <div class="grad5">
+        <section id='contacts' class="wow bounceInRight">
+
+            <div class="container">
+                <div class="lp-content contacts">
+
+                    <h2>Контакты</h2>
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <h2>Карта проезда:</h2>
+                            <div id="lp-map"></div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div id="lp-fb1">
+                                <h2>Здесь можно оставить заказ</h2>
+                                <h3>Заполните контактные данные:</h3>
+                                <input type="text" name="name" maxlength="50" data-wi-fb-caption="Имя" placeholder="Ваше Имя..." />
+                                <input type="tel" name="phone" maxlength="50" data-wi-fb-caption="Телефон" placeholder="Ваш Телефон..." required />
+                                <input type="email" name="email" maxlength="50" data-wi-fb-caption="Почта" placeholder="Ваш E-mail..." />
+                                <textarea name="message" maxlength="500" data-wi-fb-caption="Сообщение" placeholder="Опишите то, что вы хотите..." required></textarea>
+                                <button>Оставить заказ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social">
+                       <h3>FOLLOW US ON SOCIAL MEDIA:</h3>
+                        <a class="fab fa-facebook-square fa-5x" id="fb" href="https://www.facebook.com/artdainty" target="_blank"></a>
+                        <a class="fab fa-instagram fa-5x" id="in" href="https://www.instagram.com/artdainty/" target="_blank"></a>
+                        <a class="fab fa-vk fa-5x" id="vk" href="https://vk.com/artdainty" target="_blank"></a>
+                        <a class="fab fa-odnoklassniki-square fa-5x" id="ok" href="https://ok.ru/artdainty" target="_blank"></a>
+                        <p></p><p></p>
+                        <h5>AND TELL YOUR FRIENDS ABOUT US</h5>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <div class="grad6">
+        <footer class="wow slideInUp">
+
+            <div class="container">
+                <p>&copy; Landing page 2018</p>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>

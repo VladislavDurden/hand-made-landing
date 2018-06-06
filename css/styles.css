@@ -1,0 +1,391 @@
+body {
+    font-family: "AleksandraCRegular";
+    text-shadow: 2px 2px 2px #444444;
+}
+
+
+/*                Fonts*/
+
+@font-face {
+    font-family: "AleksandraCRegular";
+    src: url("../fonts/AleksandraCRegular.eot");
+    src: url("../fonts/AleksandraCRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/AleksandraCRegular.woff") format("woff"),
+    url("../fonts/AleksandraCRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/*       Background*/
+
+.grad1,
+.grad3,
+.grad5 {
+    background: linear-gradient(to bottom, #8c887d, #579b87);
+    margin: none;
+}
+
+.grad2,
+.grad4 {
+    background: linear-gradient(to top, #8c887d, #579b87);
+    margin: none;
+}
+
+.grad6 {
+    background: #579b87;
+}
+
+section {
+    padding-top: 15px;
+}
+
+.services {
+    background: none;
+    text-shadow: none;
+}
+
+
+.portfolio {
+    background: none;
+}
+
+.prices {
+    background: #7fc4b0;
+    border-radius: 0 0 50px 50px;
+    text-shadow: none;
+}
+
+.prices h2{
+    text-shadow: 2px 2px 2px #444444;
+}
+
+.prices thead {
+    text-shadow: none;
+}
+
+.contacts {
+    background: #d3f9c5;
+    border-radius: 50px 50px 0 0;
+
+}
+
+#lp-fb1 h2  {
+    color: #438470;
+}
+
+#lp-fb1 button{
+    background: #438470;
+}
+
+#contacts {
+    padding-bottom: 15px;
+}
+
+/*            Preloader*/
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    z-index: 999;
+    transition: 1s all;
+    opacity: 1;
+    visibility: visible;
+}
+
+.loader {
+    height: 100px;
+    width: 100px;
+    border: 13px solid white;
+    border-radius: 50%;
+    border-top-color: #579b87;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: 1s spin infinite linear;
+
+}
+
+.done {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/*              The end of preloader*/
+
+header {
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    text-shadow: none;
+
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 0;
+
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color .5s, padding .5s;
+
+}
+
+header ul li a:hover {
+    color: #579b87;
+    text-decoration-line: none;
+}
+
+header ul li.active a {
+    color: #579b87;
+    text-decoration-line: none;
+
+}
+
+header.top ul li a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.lp-content {
+
+    padding: 40px 0;
+
+}
+
+
+
+.lp-content h2 {
+    text-align: center;
+    color: #579b87;
+    margin-bottom: 20px;
+}
+
+.lp-content h2.white {
+    color: white;
+    text-shadow: 2px 2px 2px #444444;
+}
+
+.lp-content h2.black {
+    color: #2d2d2d;
+}
+
+.tabs-text p {
+    font-size: 20px;
+    text-indent: 2em;
+    line-height: 25px;
+    text-align: justify;
+    font-family: "AleksandraCRegular";
+}
+
+footer {
+
+    background: #438470;
+    padding: 25px;
+    color: #fff;
+    text-align: center;
+
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+/*             Slider*/
+
+.slideshow {
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.owl-nav > div {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 100%;
+    margin-top: -40px;
+    opacity: 0.55;
+    text-align: center;
+    transition: opacity 0.25s;
+
+}
+
+
+.owl-nav > div:hover {
+    opacity: 0.95;
+}
+
+
+.owl-prev {
+    left: 20px;
+}
+
+.owl-next {
+    right: 20px;
+}
+
+.owl-nav > div i {
+    font-size: 40px;
+    color: #70b29e;
+    line-height: 50px;
+
+}
+
+.owl-dots {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.owl-dot {
+    display: inline-block;
+    padding: 0 10px;
+    opacity: 0.75;
+}
+
+.owl-dot span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 100%;
+    transition: background-color;
+}
+
+.owl-dot.active span {
+    background-color: #70b29e;
+}
+
+/*                  Tabs */
+
+.lp-tabs {
+    padding: 20px;
+}
+
+.lp-tabs .lp-tabs-titles ul {
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.lp-tabs .lp-tabs-titles ul li {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    background: #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: color .25s, background-color .25s;
+}
+
+.lp-tabs .lp-tabs-titles ul li:hover,
+.lp-tabs .lp-tabs-titles ul li.active {
+    background: #70b29e;
+    color: #fff;
+}
+
+.lp-tabs .lp-tabs-content {
+    position: relative;
+}
+
+.lp-tabs .lp-tabs-content .lp-tab {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: none;
+}
+
+/*                 Iconsк*/
+
+.fa-tags {
+    color: orange;
+}
+
+
+/*                 Map*/
+
+#lp-map {
+    height: 400px;
+    padding-left: 20px;
+}
+
+/*                   Social networks*/
+
+.social {
+    text-align: center;
+    margin-top: 35px;
+    display: inline-block;
+    font-family: "AleksandraCRegular";
+
+}
+
+.social a {
+
+    margin-right: 30px;
+    margin-left: 30px;
+    position: relative;
+    . overflow: hidden;
+    -webkit-box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.social a:hover {
+    text-decoration: none;
+    -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.3), 0 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+#vk {
+    color: royalblue;
+}
+
+#ok {
+    color: orange;
+}
+
+#fb {
+    color: blue;
+}
+
+#in {
+    color: darkmagenta;
+}
